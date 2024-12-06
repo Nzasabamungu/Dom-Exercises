@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Changing the text of paragraph</h1>
+    <p id="p1"> Eminem admires Drake and acknowledges his meaningful gesture toward his daughters, ensuring Drake a permanent spot in Eminem's good graces.</p>
+   <button id = "click-here">Click Here</button>
+<script>
+    let paragraph = document.getElementById("p1");
+    let button = document.getElementById("click-here");
+    function clickMe (){
+        paragraph.textContent = "Alongside his solo career, Shakur was part of the group Thug Life and collaborated with artists like Snoop Dogg, Dr. Dre, and Outlawz. During the later part of his career, Shakur was shot five times in the lobby of a New York recording studio and experienced legal troubles, including incarceration."
+    }
+    button.addEventListener("click", clickMe)
+</script>
+
+</body>
+</html>
+
