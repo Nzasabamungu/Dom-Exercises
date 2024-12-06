@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn"> Click and Count</button>
+    <p id="result"> numbers</p>
+    <script>
+        let numbers=0;
+        let result=document.getElementById("result")
+        let button = document.getElementById("btn")
+        function clickAndNumbering (){
+            console.log(numbers)
+            result.textContent = numbers+=1
+        }
+       button.addEventListener("click", clickAndNumbering)
+       
+    </script>
+</body>
+</html>
